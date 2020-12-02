@@ -6,6 +6,13 @@ RUN apt-get update \
         wget \
         libxcb1-dev \
         libpcre16-3 \
+        libx11-xcb1 \
+        libxcb-keysyms1 \
+        libxcb-image0 \
+        libxcb-shm0 \
+        libxcb-icccm4 \
+        libxcb-sync1 \
+        libxcb-render-util0 \
     && rm -r /var/lib/apt/lists/*
 
 RUN wget -q --content-disposition https://minergate.com/download/deb-cli \
